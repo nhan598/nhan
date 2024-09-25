@@ -1,0 +1,110 @@
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    font: 1.2em helvetica,arial,sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header-cell"
+    "nav-cell"
+    "main-cell"
+    "footer-cell";
+}
+header,footer,main{
+    border:1px solid #ccc7c8;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#header-img1{
+    height: 100px;
+    position: absolute;
+    top: -30px;
+    animation: img1 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes img1{
+    from{left: 80%;}
+    to{left: 30%;}
+}
+#header-img2{
+    height: 70px;
+    position: absolute;
+    top: -5px;
+    animation: img2 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes img2{
+    from{left: 80%;}
+    to{left: 45%;}
+}
+#header-img3{
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    animation: img3 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes img3{
+    from{left: 80%;}
+    to{left: 63%;}
+}
+nav{
+    grid-area: nav-cell;
+    margin-top: 20px;
+}
+nav a{
+    float: left;
+    margin: 3px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 2 4px;
+    height: 20px;
+    background: #ffffff80;
+    text-decoration: none;
+    font-size: 17px;
+    color: #ed4190;
+    text-align: center;
+    box-shadow: 0 0 3px 0 #00000066, 0 0 2px 0 #0000004d;
+}
+nav a:hover{
+    color:#fff;
+    background: #ed4190;
+}
+.search-container{
+    float: right;
+    padding-top: 3px;
+}
+.icon-white,.icon-pink{
+    padding: 4px;
+    background: #cddc39;
+    min-width: 30px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.icon-pink{
+    color: #ed4190;
+    margin-left: 5px;
+}
+.oder1{
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+.oder1 div{
+    border: 1px solid #ed4190;
+    border-radius: 5px;
+    padding-top: 5;
+    width: 24%;
+    display: inline-block;
+}
+main{
+    grid-area: main-cell;
+    display: grid;
+    padding: 0 5px;
+}
+main.one-col{
+    grid-template-areas:
+    "left-cell"
+    "article-cell";
+}
+
