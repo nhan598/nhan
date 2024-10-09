@@ -1,58 +1,63 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta chaset="utf-8">
-        <title>Đăng Nhập</title>
-    </head>
-    <body>
-        <header>
-            <p><a href="trangchu.html"><img src="./images/logo.png"/></p></a>
-            
-            <!---nav--->
-            <nav>
-                <a href="trangchu.html">Trang Chủ</a>
-                <a href="gioithieu.html">Giới Thiệu</a>
-                <a href="sanpham.html">Sản Phẩm</a>
-                <a href="tintuc.html">Tin Tức</a>
-                <a href="dangnhap.html">Đăng Nhập</a>
-                <a href="dangki.html">Đăng Ký</a>
-                <a href="lienhe.html">Liên Hệ</a>
-            </nav>
-        </header>
-        <main>
-            <fieldset>
-                <legend>Đăng Nhập</legend>
-                <table>
-                    <tr colspan="2"><img src="./images/dangnhap/userlogin.png"/>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>
-                            <input type="text" name="txtUsername" value="" maxlength="50"
-                            placeholder="Nhập email" size="40"><br/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Mật khẩu</td>
-                        <td><input type="password" name="txtPassword" value="" maxlength="50"
-                            placeholder="Nhập mật khẩu" size="40"></td>
-                    </tr>
-                    <tr colspan="2">
-                       <td> <input type="button" value="Đăng Nhập">
-                        <input type="button" value="Hủy"></td>
-                    </tr>
-                    <tr colspan="2">
-                        <td>Bạn quên <a href="dangki.html">Mật khẩu?</a> <input type="checkbox">Ghi nhớ cho lần đang nhập sau</td>
-                    </tr>
-                </table>
-            </fieldset>
-        </main>
-        <footer>
-            <p>&copy; 2021 Bản quyền thuộc về FreeezeVN.<a href="https://www.facebook.com/login/?locale=vi_VN">facebook</a>
-                <a href="https://x.com/?lang=vi">twitter</a>
-                <a href="https://www.pinterest.com/">pinterest</a>
-                <a href="#top">Về đầu trang</a>
-            </p>
-        </footer>
-    </body>
+<!doctype html>
+<html lang="vi-VN">
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng Nhập</title>
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+		<img id="header-img1" src="images/header-img1.png" alt="" >
+		<img id="header-img2" src="images/header-img2.png" alt="" >
+		<img id="header-img3" src="images/header-img3.png" alt="" >
+		<a id="#top" href="trangchu.html" ><img src="images/logo.png" alt=""></a>		
+		<nav>
+			<a href="trangchu.html">Trang Chủ</a>					
+			<a href="gioithieu.html">Giới Thiệu</a>
+			<a href="sanpham.html">Sản Phẩm</a>
+			<a href="tintuc.html">Tin Tức</a>
+			<a href="dangnhap.html">Đăng Nhập</a>
+			<a href="dangky.html">Đăng Ký</a>
+			<a href="lienhe.html">Liên Hệ</a>
+			<div class="">
+				<form method="get" action="#">
+				<div class="r">					
+					<input id="search" class="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="search">
+					<i class=""></i>
+					<i class=""></i>
+				</div>
+				</form>		
+			</div>			
+		</nav>
+	</header>
+    <main>		
+		<form action="#" method="post" style="max-width:500px;margin:auto" enctype="multipart/form-data">
+		  <h1>Đăng Nhập</h1>
+          <img width="300px" src="images/dangnhap/userlogin.png" >
+		  <div class="r">
+				<i class="fa fa-envelope icon-white"></i>
+				<input class="input-field" type="text" placeholder="Nhập email" name="email">
+		  </div>		  
+		  <div class="r">
+				<i class="fa fa-key icon-white"></i>
+				<input class="input-field" type="password" placeholder="Nhập mật khẩu" name="psw">
+          </div>
+        <div>
+            Bạn quên <a href="">Mật khẩu? </a> <input type="checkbox"> Ghi nhớ cho lần đăng nhập sau
+        </div>
+        <div>
+            <input type="submit" placeholder="Đăng Nhập" value="Đăng nhập"><input type="reset" value="Hủy">
+        </div>
+		</form>			
+	</main>
+    <footer>			
+		<p>&copy; 2021 Bản quyền thuộc về FreeezeVN. 
+			<a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>
+			<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+			<a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+			<a href="#top" class="gotop"><img src="images/top.png" width="60"></a></p>
+	</footer>
+</body>
 </html>
